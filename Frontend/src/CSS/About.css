@@ -1,0 +1,96 @@
+/* about.css */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Croissant+One&family=Inconsolata:wght@200;900&family=Rubik:wght@300&display=swap");
+
+:root {
+  --color-1: rgb(205, 180, 219);
+  --color-2: rgb(255, 200, 221);
+  --color-3: rgb(255, 175, 204);
+  --color-4: rgb(189, 224, 254);
+  --color-5: rgb(255, 210, 255);
+  --color-6: rgb(70, 11, 70);
+  
+  --font-1: "Bebas Neue", sans-serif;
+  --font-2: "Croissant One", cursive;
+  --font-inconsolata: "Inconsolata", monospace;
+  --font-rubik: "Rubik", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8rem 1.5rem;
+  background: linear-gradient(to left, var(--color-4), var(--color-5));
+  font-family: var(--font-rubik);
+  color: var(--color-6);
+}
+
+.about-specta{
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.about-specta,
+.goal-specta,
+.delivary,
+.thanksforchoosing {
+  font-size: 2rem;
+  left: 3.5rem;
+  text-decoration: underline;
+  padding-top: 1rem;
+}
+
+p,  
+c,
+d,
+e {
+  font-family: var(--font-rubik);
+  color: var(--color-6);
+  font-size: 1.3rem;
+}
+@media (max-width: 768px) {
+  .about-container {
+    padding: 6rem 1.5rem;
+  }
+  
+  .about-specta,
+  .goal-specta,
+  .delivary,
+  .thanksforchoosing {
+      font-size: 1.5rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0rem;
+  }
+  p,
+  d,
+  c,
+  e {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    padding: 6rem 1.5rem;
+  }
+  
+  .about-specta,
+  .goal-specta,
+  .delivary,
+  .thanksforchoosing {
+      font-size: 1.5rem;
+      padding-top: 0.5rem 0.2rem;
+  }
+  p,
+  d,
+  c,
+  e {
+    font-size: 0.5rem;
+  }
+}
